@@ -351,7 +351,6 @@ public class ClientManagementController {
            (cln.get()).setPassword(passwordEncoder.encode(pass));
            Client clientUpdated=clientJpaRepositoryImpl.saveAndFlush(cln.get());
            }
-
                return new ResponseEntity<Integer>(1,HttpStatus.OK);
 
        }

@@ -12,6 +12,8 @@ public class corsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**").allowedOrigins( "https://bank-client-app.herokuapp.com")
+        .allowedHeaders("*").exposedHeaders("Authorization,RefreshToken").allowedMethods("*").
+        allowedOrigins( "http://localhost:4200")
         .allowedHeaders("*").exposedHeaders("Authorization,RefreshToken").allowedMethods("*");
     }
 }
