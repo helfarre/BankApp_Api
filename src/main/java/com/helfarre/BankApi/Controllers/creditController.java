@@ -35,7 +35,6 @@ import com.helfarre.BankApi.Services.creditService;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", exposedHeaders = "Authorization")
 @RequestMapping("/credit")
 public class creditController {
 

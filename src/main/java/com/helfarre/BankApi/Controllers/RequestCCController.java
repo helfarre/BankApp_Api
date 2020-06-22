@@ -28,7 +28,6 @@ import com.helfarre.BankApi.Services.ClientService;
 import com.helfarre.BankApi.Services.RequestCCService;
 import com.helfarre.BankApi.Services.chequeService;
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", exposedHeaders = "Authorization")
 @RequestMapping("/requestCC")
 public class RequestCCController {
 

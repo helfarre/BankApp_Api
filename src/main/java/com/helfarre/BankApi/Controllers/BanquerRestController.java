@@ -35,7 +35,6 @@ import com.helfarre.BankApi.Services.ClientService;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", exposedHeaders = "Authorization")
 @RequestMapping("/banker")
 public class BanquerRestController {
 

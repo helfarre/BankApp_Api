@@ -30,7 +30,6 @@ import com.helfarre.BankApi.Services.chequeService;
 import com.helfarre.BankApi.Services.compteService;
 import com.helfarre.BankApi.Services.epargneService;
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", exposedHeaders = "Authorization")
 @RequestMapping("/epargne/*")
 public class epargneController {
 	

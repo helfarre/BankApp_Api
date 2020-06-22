@@ -29,7 +29,6 @@ import com.helfarre.BankApi.Services.TransactionService;
 import com.helfarre.BankApi.Services.compteService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", exposedHeaders = "Authorization")
 @RequestMapping("/transaction")
 public class TransactionController {
 

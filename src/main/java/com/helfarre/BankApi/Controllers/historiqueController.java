@@ -24,7 +24,6 @@ import com.helfarre.BankApi.Services.histoimpl;
 
 @RestController
 @RequestMapping("/histo")
-@CrossOrigin(origins = "http://localhost:4200/", allowedHeaders = "*", exposedHeaders = "Authorization")
 public class historiqueController {
 	@Autowired
 	private histoimpl histserv;

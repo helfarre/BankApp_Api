@@ -34,7 +34,6 @@ import com.helfarre.BankApi.Services.RequestCartCreditService;
 import com.helfarre.BankApi.Services.cbancaireService;
 import com.helfarre.BankApi.Services.chequeService;
 
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", exposedHeaders = "Authorization") 
 @RestController
 @RequestMapping("/requestCartCredit/*")
 public class RequestCartCreditController {

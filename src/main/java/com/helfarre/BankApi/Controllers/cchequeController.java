@@ -27,7 +27,6 @@ import com.helfarre.BankApi.Services.cchequeService;
 import com.helfarre.BankApi.Services.chequeService;
 import com.helfarre.BankApi.Services.compteService;
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", exposedHeaders = "Authorization")
 	@RequestMapping("/ccheque/*")
 public class cchequeController {
 	@Autowired

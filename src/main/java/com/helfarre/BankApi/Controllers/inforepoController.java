@@ -21,7 +21,6 @@ import com.helfarre.BankApi.Services.infocreditImpl;
 
 @RestController
 @RequestMapping("/infos")
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", exposedHeaders = "Authorization")
 public class inforepoController {
 
 	@Autowired

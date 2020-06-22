@@ -30,7 +30,6 @@ import com.helfarre.BankApi.Services.ClientServiceImpl;
 import com.helfarre.BankApi.Services.adminServ;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", exposedHeaders = "Authorization")
 @RequestMapping("/admin")
 public class admincontroller {
 @Autowired
