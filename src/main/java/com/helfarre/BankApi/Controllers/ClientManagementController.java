@@ -327,8 +327,10 @@ public class ClientManagementController {
 	   
 	   */
 	   
-	   @PutMapping("/sendpassword/{email}")
-       public ResponseEntity<?> motdepasseoublié( @PathVariable String email){
+	   @PutMapping("/sendpassword/{email:.+}")
+       public ResponseEntity<?> motdepasseoublie(@PathVariable String email){
+		   System.out.println("worked");
+		   System.out.println(email);
            Optional<Client> cln=clientJpaRepositoryImpl.findByEmail(email);
            if(cln.isPresent()) {
                Date date2=new Date();
