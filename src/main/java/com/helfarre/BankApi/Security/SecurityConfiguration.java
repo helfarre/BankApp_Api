@@ -67,26 +67,25 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable().cors().and()
 		.authorizeRequests()
-		.antMatchers("*").permitAll();
+//		.antMatchers("*").permitAll();
 
 	//	.anyRequest().permitAll()
 		//permettre l'access a cet url sans authentification
 		// ca veut pas dire qu'on passe pas par les filtres
-	/*		.antMatchers("/authenticate").permitAll()
+			.antMatchers("/authenticate").permitAll()
 			.antMatchers("/authenticateBanquier").permitAll()
 			.antMatchers("/authenticateAdmin").permitAll()
 			.antMatchers("/renewAdmin").permitAll()
 			.antMatchers("/renewClient").permitAll()
 			.antMatchers("/renewBanquier").permitAll()
 			.antMatchers("/Client/sendpassword/*").permitAll()
-
 			.anyRequest().authenticated()
 		.and().sessionManagement()
 		.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
 		.and()
 		.httpBasic();
 //		//add our jwt filter before usernamepasswordauthenticationfilter
-		http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);*/
+		http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 		}
 	    @Bean
 	    @Override
