@@ -347,9 +347,7 @@ public class ClientManagementController {
                        buffer.append((char) randomLimitedInt);
                    }
                    String pass = buffer.toString();
-
                 clientservice.sendemail(cln.get().getEmail(),"votre nouveau mot de passe est:   "+ pass);
-
            (cln.get()).setPassword(passwordEncoder.encode(pass));
            Client clientUpdated=clientJpaRepositoryImpl.saveAndFlush(cln.get());
            }
